@@ -128,7 +128,7 @@ nav ul li a:hover {
      padding: 4px;
      color: #ffa01c;
      white-space: nowrap;
-     z-index: 99999;
+     z-index: 99;
      font-weight: bold;
      visibility: hidden;
  }
