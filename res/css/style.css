@@ -1,3 +1,4 @@
+
 html {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
@@ -16,9 +17,11 @@ body {
 }
 
 .logo-image {
+  margin: 112px 0 32px 0;
   margin: 7rem 0 2rem 0;
   position: relative;
   display: inline-block;
+  -webkit-transition: all 3s ease-in-out;
   transition: all 3s ease-in-out;
 }
 
@@ -53,18 +56,22 @@ body {
 
 .name-text h1 {
   font-family: 'Oxygen', sans-serif;
+  font-size: 48px;
   font-size: 3rem;
   font-weight: bold;
 }
 
 .name-text h2 {
+  font-size: 20.8px;
   font-size: 1.3rem;
+  margin-bottom: 48px;
   margin-bottom: 3rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 .name-text .line {
   border: 1px solid white;
+  margin: 16px auto;
   margin: 1rem auto;
   width: 580px;
 }
@@ -77,9 +84,15 @@ nav {
 }
 
 .main-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
   padding: 1rem;
   width: 800px;
   margin: auto;
@@ -103,20 +116,28 @@ nav ul li a:hover {
   bottom: -20px;
   background-color: #74605b;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
   padding: 0.5rem;
   margin: auto;
 }
 
 .mini-navigation i {
    border: 2px solid #fff;
+   padding: 16px;
    padding: 1rem;
    border-radius: 50%;
  }
 
 [data-title]:hover:after {
+     -webkit-transition: all 0.1s ease 0.3s;
      transition: all 0.1s ease 0.3s;
      visibility: visible;
  }
@@ -124,6 +145,7 @@ nav ul li a:hover {
 [data-title]:after {
      content: attr(data-title);
      position: absolute;
+     top: -48px;
      top: -3rem;
      left: 2%;
      padding: 4px;
